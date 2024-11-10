@@ -1,0 +1,10 @@
+const express = require("express");
+
+const app = express();
+app.get("/", (request,response) => { // the route part 
+    response.json({message: "Batol Alashwak"})
+});
+app.listen(8000, () => {
+    console.log("The application is running on localhost: 8000");
+  });
+  
